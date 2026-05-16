@@ -1,0 +1,43 @@
+.header {
+  width: 100%;
+  height: 8rem;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-primary);
+}
+
+.header .nav-link {
+    color: var(--text-secondary);
+    font-size: 1.6rem;
+
+}
+
+.header .logo {
+    font-size: 2.6rem;
+    color: var(--text-primary);
+}
+
+.header .hire-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    color: var(--text-secondary);
+
+    padding: 0.1rem 1.6rem;
+    border-radius: 999px;
+
+    font-size: medium;
+    font-weight: 600;
+    text-decoration: none;
+
+    background:
+        linear-gradient(var(--bg-secondary), var(--bg-secondary)) padding-box,
+        linear-gradient(90deg, var(--blue-primary), var(--pink-highlight)) border-box;
+
+    border: 1.5px solid transparent;
+
+    transition: 0.3s ease;
+}
