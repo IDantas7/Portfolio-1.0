@@ -1,0 +1,129 @@
+.skills {
+    width: 100%;
+    padding: 8rem 8%;
+    background-color: var(--bg-primary);
+}
+
+.skills-title {
+    font-size: 5rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    line-height: 1.1;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.skills-title span {
+    background: linear-gradient(90deg, #3b82f6, #8b9acf, #e84a6a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.skills-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.skills-block {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.skills-subtitle {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.hard-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    gap: 1.6rem;
+}
+
+.skill-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 2rem 1.5rem;
+    border-radius: 1.4rem;
+    background: rgba(31, 56, 110, 0.18);
+    border: 1px solid rgba(59, 130, 246, 0.12);
+    backdrop-filter: blur(4px);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    cursor: default;
+}
+
+.skill-badge:hover {
+    transform: translateY(-3px);
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
+.skill-badge svg {
+    font-size: 3rem;
+}
+
+.skill-badge span {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+.soft-skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    align-content: flex-start;
+}
+
+.soft-badge {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    padding: 0.8rem 1.8rem;
+    border-radius: 999px;
+    background: rgba(31, 56, 110, 0.18);
+    border: 1px solid rgba(59, 130, 246, 0.15);
+    transition: border-color 0.2s ease, color 0.2s ease;
+    cursor: default;
+}
+
+.soft-badge:hover {
+    border-color: rgba(59, 130, 246, 0.4);
+    color: var(--text-primary);
+}
+
+@media (max-width: 992px) {
+    .skills-inner {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .skills-title {
+        font-size: 4rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .skills {
+        padding: 6rem 6%;
+    }
+
+    .skills-title {
+        font-size: 3.5rem;
+    }
+
+    .hard-skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    }
+}

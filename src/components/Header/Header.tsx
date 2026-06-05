@@ -2,6 +2,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import './Header.css'
 import { Button } from "react-bootstrap";
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 function Header() {
     function handleHireClick() {
@@ -32,9 +33,13 @@ function Header() {
                 <Nav.Link href="#contact">Contact </Nav.Link>
 
             </Navbar>
-            <Button href="#contact" className="hire-button" title="Hire Me" onClick={handleHireClick}>
-                <span className="hire-icon">✦</span>
-                Hire Me</Button>
+            <div className="header-actions">
+                <LanguageSwitcher />
+                <Button href="#contact" className="hire-button" title="Hire Me" onClick={handleHireClick}>
+                    <span className="hire-icon">✦</span>
+                    Hire Me
+                </Button>
+            </div>
 
 
         </header>

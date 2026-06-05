@@ -1,0 +1,36 @@
+.lang-switcher {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem 1.2rem;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+
+    background:
+        linear-gradient(var(--bg-secondary), var(--bg-secondary)) padding-box,
+        linear-gradient(90deg, var(--blue-primary), var(--pink-highlight)) border-box;
+
+    border: 1.5px solid transparent;
+    transition: opacity 0.2s ease, transform 0.15s ease;
+}
+
+.lang-switcher:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+
+.lang-switcher:active {
+    transform: scale(0.97);
+}
+
+.lang-flag {
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+.lang-code {
+    letter-spacing: 0.05em;
+}
