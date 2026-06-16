@@ -70,9 +70,37 @@
     color: var(--text-secondary);
 }
 
+/* ── Tablet (landscape) ── */
+@media (max-width: 1024px) {
+    .contact-title {
+        font-size: 4.4rem;
+    }
+}
+
+/* ── Tablet (portrait) ── */
+@media (max-width: 768px) {
+    .contact {
+        padding: 7rem 6%;
+    }
+
+    .contact-title {
+        font-size: 4rem;
+    }
+
+    .contact-subtitle {
+        font-size: 1.7rem;
+        margin-bottom: 4rem;
+    }
+
+    .contact-grid {
+        gap: 2rem;
+    }
+}
+
+/* ── Mobile ── */
 @media (max-width: 576px) {
     .contact {
-        padding: 6rem 6%;
+        padding: 6rem 5%;
     }
 
     .contact-title {
@@ -81,6 +109,7 @@
 
     .contact-subtitle {
         font-size: 1.6rem;
+        margin-bottom: 3.5rem;
     }
 
     .contact-grid {
@@ -89,5 +118,18 @@
 
     .contact-card {
         padding: 2.5rem 3rem;
+        flex: 1 1 14rem;
+    }
+}
+
+/* ── Small mobile ── */
+@media (max-width: 400px) {
+    .contact-title {
+        font-size: 3rem;
+    }
+
+    .contact-card {
+        flex: 1 1 100%;
+        padding: 2.2rem 2.5rem;
     }
 }

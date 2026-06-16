@@ -1,4 +1,4 @@
-import { FaGithub, FaYoutube, FaExternalLinkAlt, FaFigma } from 'react-icons/fa'
+import { FaGithub, FaYoutube, FaExternalLinkAlt } from 'react-icons/fa'
 import './Projects.css'
 import { useLanguage } from '../../context/LanguageContext'
 import wallet from "../../assets/images/wallet-core-api.png"

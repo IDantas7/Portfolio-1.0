@@ -1,9 +1,8 @@
 import {
-    FaJava, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub,
+    FaJava, FaReact, FaGitAlt, FaGithub, FaDocker, FaAws,
 } from 'react-icons/fa'
 import {
-    SiSpringboot, SiPostgresql, SiJavascript,
-    SiIntellijidea, SiVsco, SiFigma,
+    SiSpringboot, SiPostgresql, SiMongodb,
 } from 'react-icons/si'
 import type { IconType } from 'react-icons'
 import './Skills.css'
@@ -19,14 +18,12 @@ const hardSkills: HardSkill[] = [
     { Icon: FaJava, name: 'Java', color: '#f89820' },
     { Icon: SiSpringboot, name: 'Spring Boot', color: '#6db33f' },
     { Icon: SiPostgresql, name: 'PostgreSQL', color: '#336791' },
-    { Icon: FaHtml5, name: 'HTML', color: '#e34f26' },
-    { Icon: FaCss3Alt, name: 'CSS', color: '#264de4' },
-    { Icon: SiJavascript, name: 'JavaScript', color: '#f7df1e' },
+    { Icon: FaReact, name: 'ReactJS', color: '#61dafb' },
+    { Icon: SiMongodb, name: 'MongoDB', color: '#47a248' },
     { Icon: FaGitAlt, name: 'Git', color: '#f05032' },
     { Icon: FaGithub, name: 'GitHub', color: '#ffffff' },
-    { Icon: SiIntellijidea, name: 'IntelliJ', color: '#fe315d' },
-    { Icon: SiVsco, name: 'VSCode', color: '#007acc' },
-    { Icon: SiFigma, name: 'Figma', color: '#f24e1e' },
+    { Icon: FaDocker, name: 'Docker', color: '#2496ed' },
+    { Icon: FaAws, name: 'Cloud', color: '#ff9900' },
 ]
 
 const softSkills = {

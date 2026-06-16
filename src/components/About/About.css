@@ -93,10 +93,26 @@
     margin-top: 0.5rem;
 }
 
-@media (max-width: 992px) {
+/* ── Tablet (landscape) ── */
+@media (max-width: 1024px) {
+    .about-title {
+        font-size: 4.4rem;
+    }
+}
+
+/* ── Tablet (portrait) ── */
+@media (max-width: 768px) {
+    .about {
+        padding: 7rem 6%;
+    }
+
     .about-inner {
         flex-direction: column;
         gap: 4rem;
+    }
+
+    .about-title {
+        font-size: 4rem;
     }
 
     .about-stats {
@@ -108,17 +124,15 @@
     }
 
     .about-stat-card {
-        min-width: 14rem;
-    }
-
-    .about-title {
-        font-size: 4rem;
+        flex: 1 1 14rem;
+        min-width: 12rem;
     }
 }
 
+/* ── Mobile ── */
 @media (max-width: 576px) {
     .about {
-        padding: 6rem 6%;
+        padding: 6rem 5%;
     }
 
     .about-title {
@@ -127,5 +141,21 @@
 
     .about-description {
         font-size: 1.6rem;
+    }
+
+    .about-btn {
+        font-size: 1.5rem;
+        padding: 1.2rem 2.4rem;
+    }
+}
+
+/* ── Small mobile ── */
+@media (max-width: 400px) {
+    .about-title {
+        font-size: 3rem;
+    }
+
+    .about-stat-card {
+        flex: 1 1 100%;
     }
 }
