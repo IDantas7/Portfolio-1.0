@@ -12,7 +12,7 @@ function Footer() {
 
     return (
         <footer className="footer">
-            <span className="footer-copy">© 2025 Iago Dantas</span>
+            <span className="footer-copy">© 2026 Iago Dantas</span>
             <span className="footer-sep">·</span>
             <span className="footer-built">{t.built}</span>
         </footer>

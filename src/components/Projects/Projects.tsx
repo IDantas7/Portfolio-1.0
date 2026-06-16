@@ -1,6 +1,9 @@
-import { FaGithub, FaYoutube, FaExternalLinkAlt } from 'react-icons/fa'
+import { FaGithub, FaYoutube, FaExternalLinkAlt, FaFigma } from 'react-icons/fa'
 import './Projects.css'
 import { useLanguage } from '../../context/LanguageContext'
+import wallet from "../../assets/images/wallet-core-api.png"
+import greenComply from "../../assets/images/GreenComply.png"
+import terraSync from "../../assets/images/terraSyngImg.png"
 
 type Project = {
     image: string
@@ -8,78 +11,50 @@ type Project = {
     description: { 'pt-BR': string; 'en-US': string }
     tags: string[]
     link: string
-    linkType: 'github' | 'youtube'
+    linkType: 'github' | 'youtube' | 'figma'
 }
 
 const projects: Project[] = [
     {
-        image: 'assets/images/projetoJava.png',
+        image: wallet,
         title: {
-            'pt-BR': 'Java + Spring — API Tabela FIPE',
-            'en-US': 'Java + Spring — FIPE Price API',
+            'pt-BR': 'Wallet Core Api - Java + Spring',
+            'en-US': 'Wallet Core Api - Java + Spring',
         },
         description: {
-            'pt-BR': 'API que consome a Tabela FIPE para consulta de preços de veículos. Permite buscar carros, motos e caminhões por marca e modelo, retornando os valores e anos de fabricação disponíveis.',
-            'en-US': 'API that consumes the FIPE table to query vehicle prices. Supports cars, motorcycles, and trucks lookup by brand and model, returning pricing and available manufacture years.',
+            'pt-BR': 'API backend desenvolvida com Java e Spring Boot para gerenciamento de carteiras e transações financeiras. Implementa arquitetura REST, persistência de dados com JPA/Hibernate e regras de negócio. Projeto criado para aplicar boas práticas de desenvolvimento backend e engenharia de software.',
+            'en-US': 'Backend API developed with Java and Spring Boot for managing financial wallets and transactions. It implements a RESTful architecture, data persistence with JPA/Hibernate, and business rules. The project was built to apply backend development and software engineering best practices.',
         },
-        tags: ['Java', 'Spring Boot', 'API REST'],
-        link: 'https://github.com/IDantas7/Spring-tabelaFipe',
+        tags: ['Java', 'Spring Boot', 'ApiRest', 'Docker', 'CI/CD'],
+        link: 'https://github.com/IDantas7/wallet-core-api',
         linkType: 'github',
     },
     {
-        image: 'assets/images/AppVendas.png',
+        image: greenComply,
         title: {
-            'pt-BR': 'Java 17 — App de Estoque',
-            'en-US': 'Java 17 — Inventory App',
+            'pt-BR': 'GreenComply - Java + Spring boot',
+            'en-US': 'GreenComply - Java + Spring boot',
         },
         description: {
-            'pt-BR': 'Aplicação de gerenciamento de estoque e vendas. Permite adicionar, listar e remover produtos, registrar vendas com retirada automática do estoque e persistência de dados em JSON.',
-            'en-US': 'Inventory and sales management application. Supports adding, listing, and removing products, recording sales with automatic stock deduction, and JSON file data persistence.',
+            'pt-BR': 'API REST desenvolvida com Java e Spring Boot para gerenciamento de conformidade ambiental, utilizando arquitetura em camadas, autenticação JWT, Oracle Database e Docker, seguindo boas práticas de desenvolvimento backend e APIs escaláveis',
+            'en-US': 'REST API developed with Java and Spring Boot for environmental compliance management, leveraging a layered architecture, JWT authentication, Oracle Database, and Docker while following backend development best practices to build secure, maintainable, and scalable APIs.',
         },
-        tags: ['Java 17', 'JSON', 'OOP'],
-        link: 'https://github.com/IDantas7/Sistema-estoque-venda',
+        tags: ['Java', 'JWT', 'Docker'],
+        link: 'https://github.com/IDantas7/GreenComply',
         linkType: 'github',
     },
     {
-        image: 'assets/images/BuscarCep.png',
+        image: terraSync,
         title: {
-            'pt-BR': 'Java 23 — Busca de CEP',
-            'en-US': 'Java 23 — Postal Code Lookup',
+            'pt-BR': 'Global Solution - Terra Sync',
+            'en-US': 'Global Solution - Terra Sync',
         },
         description: {
-            'pt-BR': 'Ferramenta de linha de comando para consulta de endereços por CEP. Usa Java 23, HttpClient e Gson para fazer requisições HTTP, converter JSON e salvar os resultados em arquivo.',
-            'en-US': 'Command-line tool for postal code address lookup. Uses Java 23, HttpClient, and Gson to perform HTTP requests, parse JSON responses, and save results to a file.',
+            'pt-BR': 'Solução desenvolvida para monitoramento ambiental e agrícola, utilizando dados de satélite, inteligência artificial e análises geoespaciais para apoiar a tomada de decisões, prevenção de riscos e gestão sustentável de áreas urbanas e rurais.',
+            'en-US': 'Solution designed for environmental and agricultural monitoring, leveraging satellite data, artificial intelligence, and geospatial analysis to support decision-making, risk prevention, and sustainable management of urban and rural areas.',
         },
         tags: ['Java 23', 'HttpClient', 'Gson'],
-        link: 'https://github.com/IDantas7/BuscarCep',
-        linkType: 'github',
-    },
-    {
-        image: 'assets/images/Zentrix.jpeg',
-        title: {
-            'pt-BR': 'Fintech Zentrix',
-            'en-US': 'Fintech Zentrix',
-        },
-        description: {
-            'pt-BR': 'Projeto acadêmico em desenvolvimento. Plataforma de serviços financeiros para gerenciamento de finanças pessoais com controle de despesas, relatórios financeiros e recursos de segurança avançados.',
-            'en-US': 'Academic project in development. Financial services platform for personal finance management featuring expense tracking, financial reports, and advanced security features.',
-        },
-        tags: ['Java', 'Spring Boot', 'Academic'],
-        link: 'https://github.com/IDantas7/Spring-tabelaFipe',
-        linkType: 'github',
-    },
-    {
-        image: 'assets/images/GlobalSolution.png',
-        title: {
-            'pt-BR': 'Global Solution',
-            'en-US': 'Global Solution',
-        },
-        description: {
-            'pt-BR': 'Plataforma de comando unificado para situações de desastre com drones, IA e mapeamento logístico para operações de resgate e envio de suprimentos.',
-            'en-US': 'Unified command platform for disaster situations featuring drones, AI, and logistics mapping for rescue operations and supply delivery.',
-        },
-        tags: ['Python', 'AI', 'Academic'],
-        link: 'https://www.youtube.com/watch?v=DQTbc2cWH7w&t=1s',
+        link: 'https://www.youtube.com/watch?v=JnlJLpRTrIk',
         linkType: 'youtube',
     },
 ]
