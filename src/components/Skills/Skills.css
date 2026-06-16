@@ -102,7 +102,23 @@
     color: var(--text-primary);
 }
 
-@media (max-width: 992px) {
+/* ── Tablet (landscape) ── */
+@media (max-width: 1024px) {
+    .skills-title {
+        font-size: 4.4rem;
+    }
+
+    .skills-inner {
+        gap: 4rem;
+    }
+}
+
+/* ── Tablet (portrait) ── */
+@media (max-width: 768px) {
+    .skills {
+        padding: 7rem 6%;
+    }
+
     .skills-inner {
         grid-template-columns: 1fr;
         gap: 4rem;
@@ -110,20 +126,39 @@
 
     .skills-title {
         font-size: 4rem;
-        margin-bottom: 4rem;
+        margin-bottom: 4.5rem;
     }
 }
 
+/* ── Mobile ── */
 @media (max-width: 576px) {
     .skills {
-        padding: 6rem 6%;
+        padding: 6rem 5%;
     }
 
     .skills-title {
         font-size: 3.5rem;
+        margin-bottom: 3.5rem;
     }
 
     .hard-skills-grid {
         grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+        gap: 1.2rem;
+    }
+
+    .soft-badge {
+        font-size: 1.4rem;
+        padding: 0.7rem 1.4rem;
+    }
+}
+
+/* ── Small mobile ── */
+@media (max-width: 400px) {
+    .skills-title {
+        font-size: 3rem;
+    }
+
+    .hard-skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
     }
 }
