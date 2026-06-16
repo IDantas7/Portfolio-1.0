@@ -53,7 +53,7 @@ const projects: Project[] = [
             'pt-BR': 'Solução desenvolvida para monitoramento ambiental e agrícola, utilizando dados de satélite, inteligência artificial e análises geoespaciais para apoiar a tomada de decisões, prevenção de riscos e gestão sustentável de áreas urbanas e rurais.',
             'en-US': 'Solution designed for environmental and agricultural monitoring, leveraging satellite data, artificial intelligence, and geospatial analysis to support decision-making, risk prevention, and sustainable management of urban and rural areas.',
         },
-        tags: ['Java 23', 'HttpClient', 'Gson'],
+        tags: ['Global Solution', 'FIAP', 'AI'],
         link: 'https://www.youtube.com/watch?v=JnlJLpRTrIk',
         linkType: 'youtube',
     },
