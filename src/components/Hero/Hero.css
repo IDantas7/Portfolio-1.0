@@ -175,10 +175,9 @@
     .hero {
         flex-direction: column;
         text-align: center;
-        padding: 5rem 6%;
-        gap: 4rem;
+        padding: 4rem 6% 5rem;
+        gap: 3.5rem;
         min-height: unset;
-        padding-bottom: 6rem;
     }
 
     .hero-left {
@@ -189,87 +188,94 @@
         justify-content: center;
     }
 
-    .hero-greeting { font-size: 4.6rem; }
-    .hero-name     { font-size: 5.2rem; }
-    .hero-role     { font-size: 2rem;   }
-    .hero-description { font-size: 1.7rem; }
+    .hero-greeting { font-size: 4rem; }
+    .hero-name     { font-size: 4.6rem; }
+    .hero-role     { font-size: 1.9rem; }
+    .hero-description { font-size: 1.6rem; margin-bottom: 2.5rem; }
+
+    .hero-right {
+        /* clip icons that bleed outside the image wrapper */
+        overflow: hidden;
+        padding: 2rem;
+        margin: -2rem;
+    }
 
     .hero-image-wrapper {
-        width: 36rem;
-        height: 36rem;
+        width: min(32rem, 80vw);
+        height: min(32rem, 80vw);
         transform: none;
     }
 
     .hero-image-circle {
-        width: 28rem;
-        height: 28rem;
+        width: min(25rem, 62vw);
+        height: min(25rem, 62vw);
     }
 
     .stack-icon {
-        width: 5rem;
-        height: 5rem;
-        font-size: 2.2rem;
+        width: 4.8rem;
+        height: 4.8rem;
+        font-size: 2.1rem;
     }
 }
 
 /* ── Mobile ── */
 @media (max-width: 576px) {
     .hero {
-        padding: 4rem 5%;
+        padding: 3.5rem 5% 4.5rem;
+        gap: 3rem;
     }
 
-    .hero-greeting { font-size: 3.8rem; }
-    .hero-name     { font-size: 4.4rem; }
-    .hero-role     { font-size: 1.9rem; }
-    .hero-description { font-size: 1.6rem; margin-bottom: 2.8rem; }
+    .hero-greeting { font-size: 3.4rem; }
+    .hero-name     { font-size: 4rem;   }
+    .hero-role     { font-size: 1.7rem; }
+    .hero-description { font-size: 1.5rem; margin-bottom: 2.2rem; }
 
     .hero-btn {
-        padding: 1.2rem 2.4rem;
-        font-size: 1.5rem;
+        padding: 1.1rem 2.2rem;
+        font-size: 1.4rem;
     }
 
-    /* Constrain image to avoid overflow on narrow phones */
     .hero-image-wrapper {
-        width: min(30rem, 88vw);
-        height: min(30rem, 88vw);
+        width: min(28rem, 78vw);
+        height: min(28rem, 78vw);
     }
 
     .hero-image-circle {
-        width: min(23rem, 68vw);
-        height: min(23rem, 68vw);
+        width: min(22rem, 60vw);
+        height: min(22rem, 60vw);
     }
 
     .stack-icon {
-        width: 4.4rem;
-        height: 4.4rem;
-        font-size: 2rem;
+        width: 4.2rem;
+        height: 4.2rem;
+        font-size: 1.9rem;
     }
 }
 
 /* ── Small mobile (≤ 400px) ── */
 @media (max-width: 400px) {
     .hero {
-        padding: 3rem 4%;
+        padding: 3rem 4% 4rem;
     }
 
-    .hero-greeting { font-size: 3.2rem; }
-    .hero-name     { font-size: 3.8rem; }
-    .hero-role     { font-size: 1.7rem; }
-    .hero-description { font-size: 1.5rem; }
+    .hero-greeting { font-size: 2.9rem; }
+    .hero-name     { font-size: 3.5rem; }
+    .hero-role     { font-size: 1.5rem; }
+    .hero-description { font-size: 1.4rem; }
 
     .hero-image-wrapper {
-        width: min(26rem, 90vw);
-        height: min(26rem, 90vw);
+        width: min(24rem, 82vw);
+        height: min(24rem, 82vw);
     }
 
     .hero-image-circle {
-        width: min(20rem, 70vw);
-        height: min(20rem, 70vw);
+        width: min(18rem, 62vw);
+        height: min(18rem, 62vw);
     }
 
     .stack-icon {
-        width: 3.8rem;
-        height: 3.8rem;
-        font-size: 1.7rem;
+        width: 3.6rem;
+        height: 3.6rem;
+        font-size: 1.6rem;
     }
 }
